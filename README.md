@@ -31,5 +31,5 @@ El contrato de los endpoints está del lado del backend, en
 ## Estado
 
 - Formulario de inscripción con consentimiento de datos: funcional.
-- Botones de Apple/Google Wallet: listos, esperan la implementación del módulo `wallet` del backend.
+- Botones de Apple/Google Wallet: llevan a la tarjeta cuando el backend tiene credenciales de Wallet; sin ellas, a un 501.
 - Landing de venta de Fidelify: pendiente.

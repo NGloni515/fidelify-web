@@ -104,8 +104,10 @@ Android.
 
 ## Sin resolver
 
-- **Los botones de la billetera llevan a un 501.** El backend no implementa
-  Wallet todavía: hoy un cliente se inscribe y no se lleva la tarjeta.
+- **Sin credenciales de Wallet en el backend, el botón lleva a un 501** en
+  JSON crudo, sin una página que le explique nada al cliente.
+- **Se muestran los dos botones a cualquier celular**: un iPhone ve también el
+  de Google, y un Android el de Apple.
 - **Cualquier fallo al cargar dice "No encontramos este negocio."**, también si
   es la red o el servidor. Un cliente sin señal cree que el QR está mal.
 - **El teléfono no se normaliza.** `0991234567` y `+593991234567` terminan

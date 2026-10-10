@@ -14,8 +14,9 @@ No hay sesión, ni cuenta, ni nada que recordar.
 
 La página lleva **la marca del negocio**, no la de Fidelify.
 
-La inscripción es funcional. Los botones de Apple Wallet y Google Wallet ya
-están, pero el backend todavía responde 501 a los dos.
+La inscripción es funcional. Los botones de Apple Wallet y Google Wallet llevan
+a la tarjeta cuando el backend tiene credenciales de Wallet; sin ellas responde
+501.
 
 ## La lógica de negocio vive en el backend
 

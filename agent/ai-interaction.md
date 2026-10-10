@@ -41,8 +41,8 @@ Con el backend en `localhost:3000` (base arriba y seed cargado) y la página en
   escrito sigue ahí.
 - **Con el backend apagado**: se ve un error, nunca la pantalla de "¡Listo!".
 
-Los botones de la billetera hoy llevan a un 501: es lo esperado hasta que el
-backend implemente Wallet.
+En local, sin credenciales de Wallet en el backend, los botones de la billetera
+llevan a un 501: es lo esperado.
 
 ## Orden de despliegue
 
