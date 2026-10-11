@@ -109,10 +109,16 @@ src/index.css           tokens y estilos
 
 ## Despliegue
 
-- **El hosting tiene que devolver `index.html` para cualquier ruta.** La puerta
-  de entrada de todo cliente es `/join/<slug>`, abierta directo desde un QR: sin
+Corre en **Vercel**, con la configuración de Vite que detecta sola.
+
+- **`vercel.json` devuelve `index.html` para cualquier ruta.** La puerta de
+  entrada de todo cliente es `/join/<slug>`, abierta directo desde un QR: sin
   ese respaldo, cada cliente nuevo ve un 404.
-- El origen donde quede publicada va en `CORS_ORIGINS` del backend.
+- **`VITE_API_URL`** es la URL del backend, sin `/api` al final. Vite la
+  incrusta al compilar: cambiarla exige un deploy nuevo.
+- Esta página llama directo al backend, desde otro dominio: su origen tiene que
+  estar en `CORS_ORIGINS` del backend. No hay cookies de por medio, así que no
+  necesita el proxy que usa el panel.
 - **La URL pública va impresa en el QR del mostrador de cada negocio.** Cambiar
   el dominio o la forma de la ruta `/join/:slug` rompe todos los letreros.
 - **Backend primero, siempre.** Usa `ValidationPipe` con

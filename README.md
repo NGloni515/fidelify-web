@@ -12,7 +12,7 @@ npm run dev    # http://localhost:5174/join/heladeria-demo
 ```
 
 Necesita el backend (`fidelify-backend`) en `http://localhost:3000` con el seed cargado (`npm run db:seed`).
-En producción, define `VITE_API_URL` con la URL del backend (ver `.env.example`).
+En producción corre en Vercel: define `VITE_API_URL` con la URL del backend (ver `.env.example`) y agrega el origen de la página a `CORS_ORIGINS` del backend.
 
 ## Documentación
 
